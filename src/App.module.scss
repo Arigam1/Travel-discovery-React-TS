@@ -1,0 +1,11 @@
+.main {
+  @apply bg-[#f7f7f7];
+
+  > h1 {
+    @apply text-xl font-medium;
+  }
+
+  > button {
+    @apply border border-solid border-purple-700 hover:bg-purple-700;
+  }
+}
