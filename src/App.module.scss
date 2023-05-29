@@ -1,5 +1,5 @@
 .main {
-  @apply bg-[#f7f7f7];
+  @apply grid grid-cols-2 gap-10;
 
   > h1 {
     @apply text-xl font-medium;
@@ -8,4 +8,23 @@
   > button {
     @apply border border-solid border-purple-700 hover:bg-purple-700;
   }
+}
+
+.item {
+  > img {
+    @apply w-full block rounded-xl mb-2;
+  }
+
+  .header {
+    @apply font-bold text-xl mb-1 text-[#111];
+  }
+
+  .country {
+    @apply text-orange-500 font-semibold text-lg;
+  }
+}
+
+
+.button {
+  @apply py-2 px-5 bg-orange-400 hover:bg-orange-500 transition-colors duration-300 ease-out rounded-lg mb-3 text-white
 }
