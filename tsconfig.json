@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "jsx": "react"
+  },
+  "compilerOptions": {
+    "jsx": "react"
+  },
+  "compilerOption": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnxt"],
+    "allwoJs": true,
+    "skipLibcheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceconsistentcasinginfilenames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "islatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+  },
+  "include": ["src"]
+}

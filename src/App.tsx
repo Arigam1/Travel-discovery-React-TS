@@ -1,10 +1,16 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import s from './App.module.scss'
 import { initionalPlaces } from './places.data'
 import PlaceItem from './PlaceItem'
+import { IPlace } from './place.interface'
 
 function App() {
-  const [places, setPlaces] = useState(initionalPlaces)
+  const [places, setPlaces] = useState<IPlace>(initionalPlaces)
+
+
+  useEffect(()=> {
+    console.log('new place!!!')
+  }, [places])
 
   const addNewPlace = () => {
     setPlaces([
@@ -21,7 +27,7 @@ function App() {
   return (
     <div className='bg-[#EFF8F9] p-10'>
       <div className='text-center mb-2'>
-        <button className={s.button} onClick={add}>
+        <button className={s.button} onClick={addNewPlace}>
           Add place
         </button>
       </div>
